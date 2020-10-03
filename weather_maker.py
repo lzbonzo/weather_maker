@@ -92,15 +92,15 @@ class WeatherMaker:
 
 class ImageMaker:
     CONDITION_IMAGES = {
-        'Ясно': 'python_snippets/external_data/weather_img/sun.jpg',
-        'Облачно': 'python_snippets/external_data/weather_img/cloud.jpg',
-        'Пасмурно': 'python_snippets/external_data/weather_img/cloud.jpg',
-        'Снег': 'python_snippets/external_data/weather_img/snow.jpg',
-        'Дождь': 'python_snippets/external_data/weather_img/rain.jpg',
+        'Ясно': 'img/sun.jpg',
+        'Облачно': 'img/cloud.jpg',
+        'Пасмурно': 'img/cloud.jpg',
+        'Снег': 'img/snow.jpg',
+        'Дождь': 'img/rain.jpg',
     }
 
     def __init__(self, weather_dict):
-        self.card = 'python_snippets/external_data/probe.jpg'
+        self.card = 'img/template.jpg'
         self.card_cv = cv2.imread(self.card)
         self.im_width = self.card_cv.shape[1]
         self.im_height = self.card_cv.shape[0]

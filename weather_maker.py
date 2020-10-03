@@ -100,7 +100,7 @@ class ImageMaker:
     }
 
     def __init__(self, weather_dict):
-        self.card = 'img/template.jpg'
+        self.card = 'img/probe.jpg'
         self.card_cv = cv2.imread(self.card)
         self.im_width = self.card_cv.shape[1]
         self.im_height = self.card_cv.shape[0]
